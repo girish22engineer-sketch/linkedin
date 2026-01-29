@@ -157,7 +157,7 @@ class _HomepageState extends State<Homepage> {
         child: Column(
           children: [
             SizedBox(height: 10,),
-            Post(name: 'wipro', about: 'IT service | IT consulting |bangalore,karnataga ', content: 'wipro hiring carrer for fressher')
+            Post(name: 'wipro', about: 'IT service | IT consulting |bangalore,karnataga ', content: 'wipro hiring carrer for fressher', imageName: '21.jpg',),
           ],
         ),
       )

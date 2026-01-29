@@ -106,7 +106,9 @@ class Jobspage extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children:  [
-        Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           SizedBox(height: 10),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             ElevatedButton(onPressed: (){}, child: Text('Preference')),
             ElevatedButton(onPressed: (){}, child: Text('My Jobs')),

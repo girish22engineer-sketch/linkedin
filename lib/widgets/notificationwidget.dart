@@ -24,7 +24,7 @@ class NotificationWidget extends StatelessWidget {
             ),
             SizedBox(
               width: size.width*0.6,
-              child: Column(
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(notifyCont),
                 ],

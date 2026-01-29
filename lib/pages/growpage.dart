@@ -13,21 +13,7 @@ class Grow extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(height: 10),
-            Row(
-              children: [
-                InkWell(
-                  child: Container(
-                    width: size.width*0.49,
-                    child: Center(child: Text('Grow',style: TextStyle(color: Colors.green),))
-                  ),
-                ),InkWell(
-                  child: Container(
-                    width: size.width*0.49,
-                    child: Center(child: Text('Catch Up'))
-                  ),
-                ),
-              ],
-            ),
+          
             Divider(),
            
            Container(child: Text('Invitation'),),

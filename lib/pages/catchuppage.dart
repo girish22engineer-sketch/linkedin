@@ -18,7 +18,9 @@ class Catchuppage extends StatelessWidget {
             Divider(),
            SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-             child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+             child: Row(
+              spacing: 5,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ElevatedButton(onPressed: (){}, child: Text('All')),
                 ElevatedButton(onPressed: (){}, child: Text('Job Change')),

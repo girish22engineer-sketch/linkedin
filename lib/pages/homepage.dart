@@ -177,8 +177,8 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: const [
-         Post(name: 'name', about:' about',content: 'content')
+        children: [
+         Post(name: 'The velga', about: 'It commpany,Tecnology,information and media', content: 'The Velga becamin the fastest developing IT compay anounced by microsoft ceo', imageName: '25.jpg')
         ],
       ),
     );

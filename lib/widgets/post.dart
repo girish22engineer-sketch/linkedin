@@ -3,9 +3,11 @@ class Post extends StatelessWidget {
  final String name;
  final String about;
  final String content;
-  const Post({super.key,
+ final String imageName;
+   Post({super.key,
   required this.name,required this.about,
   required this.content,
+  required this.imageName,
   });
   
 
@@ -36,9 +38,7 @@ class Post extends StatelessWidget {
             indent: 10,
             endIndent: 10,
           ),
-          Padding(
-            padding: const EdgeInsets.all(6.0),
-            child: Row(
+          Row(
               children: [
                 SizedBox(
                   width: size.width*0.15,
@@ -47,7 +47,8 @@ class Post extends StatelessWidget {
                   width: size.width*0.65,
                   child: Column(
                     children: [
-                      Text(name),
+                      Text(name,style: TextStyle(
+                        fontWeight: FontWeight.bold),),
                       Text(about)
                     ],
                   ),
@@ -57,14 +58,25 @@ class Post extends StatelessWidget {
                 )
               ],
             ),
-          ),
+          
+          SizedBox(height: 10,),
           SizedBox(
-            height: size.height*0.1,
-            child: Text(content),
+            
+            
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8,vertical: 3),
+              child: Text(content),
+            ),
           ),
-          Container(
-            child: Image(image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/a/a9/S3_and_S4_Building_SJP2_Wipro_Sarjapur_office_Photo_182805.jpg')),
-          ),
+         AspectRatio(
+           aspectRatio: 1/1,
+            child: Image.asset(
+                  'images/$imageName',
+                  fit: BoxFit.cover,
+                    width: double.infinity,
+               ),
+                    ),
+
           Divider(
             color: Colors.grey,
             thickness: 2,

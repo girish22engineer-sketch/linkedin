@@ -117,7 +117,7 @@ class Notificationpage extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(height: 10),
-         Row(
+         Row(mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             ElevatedButton(onPressed: (){}, child: const Text('All')),
              ElevatedButton(onPressed: (){}, child: const Text('Jobs')),

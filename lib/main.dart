@@ -76,7 +76,12 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const CircleAvatar(child: Icon(Icons.person)),
+        leading: CircleAvatar(
+          
+          child: ClipOval(
+            child: Image.asset('images/13.jpg', fit: BoxFit.cover),
+          ),
+        ),
         title: TextField(
           decoration: InputDecoration(
             hintText: 'Search',
